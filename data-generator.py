@@ -89,7 +89,7 @@ company = random.choice(company_list)
 years_experience = random.choice(['1', '2', '3', '4', '5+'])
 
 #Paragraph (Applicant details)
-token = 'aAgzO4veR1jHt_gFqpwOz9Tkfz1aYc-iHSbmtSZRoIQWBQe_92MLw3tEQvZr8n8ENvi3ig.'
+token = '*******' #Private token goes here
 bard = Bard(token=token)
 input = "write me a 80 word paragraph to describe your experiences of " + years_experience + "year(s) as a " + position + " at " + company + ""
 paragraph = bard.get_answer(input)['content']
